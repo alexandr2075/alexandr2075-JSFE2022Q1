@@ -23,13 +23,18 @@ $containerPadding: 30;
     height: 180px;
 }   
 .header__logo {
+    
+}
+.header__logo-link {
+    text-decoration: none;
 }
 .header__logo-title {
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
-    line-height: 110%;
+    letter-spacing: 0.06em;
+    line-height: 90%;
     color: #F1CDB3;
 }
 .header__logo-subtitle {
@@ -37,8 +42,9 @@ $containerPadding: 30;
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
-    line-height: 15px;
     color: #FFFFFF;
+    letter-spacing: 0.1em;
+    line-height: 15px;
 }
 .menu {
 }
@@ -59,9 +65,14 @@ $containerPadding: 30;
 
     &.active {
         text-decoration: none;
-        border-bottom: 3px solid;
-        border-bottom-color: #F1CDB3;
-        padding: 0 0 0 0;
+        padding: 0;
+
+        &:after {
+            content: '';
+            display: block;
+            height: 3px;
+            background: #F1CDB3;;
+          }
     }
 }
 .start-screen-content {
