@@ -91,6 +91,7 @@ $containerPadding: 30;
     padding: 163px 0 0 0 ;
 }
 .start-screen-content__btn {
+    text-decoration: none;
     display: inline-flex;
     background: #F1CDB3;
     border-radius: 100px;
@@ -102,6 +103,11 @@ $containerPadding: 30;
     line-height: 130%;
     letter-spacing: 0.06em;
     color: #292929;
+    transition: background 0.3s ;
+
+    &:hover {
+        background: #FDDCC4;
+    }
 }
 .start-screen-content__content-heading {
     font-family: 'Georgia';
@@ -219,6 +225,11 @@ $containerPadding: 30;
     border-radius: 100px;
     background: url(../../assets/icons/Arrow-left.png) no-repeat center;
     align-self: center;
+    transition: background 0.3s;
+
+    &:hover {
+        background: url(../../assets/icons/Arrow-left.png) no-repeat center #FDDCC4;
+    }
 
 }   
 .pets__slider-card-wrapper{
@@ -274,6 +285,11 @@ $containerPadding: 30;
     border-radius: 100px;
     background: url(../../assets/icons/Arrow-right.png) no-repeat center;
     align-self: center;
+    transition: background 0.3s;
+
+    &:hover {
+        background: url(../../assets/icons/Arrow-right.png) no-repeat center #FDDCC4;
+    }
 }
 .pets-btn {
     display: flex;

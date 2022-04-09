@@ -95,6 +95,7 @@
 }
 
 .start-screen-content__btn {
+  text-decoration: none;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -108,6 +109,12 @@
   line-height: 130%;
   letter-spacing: 0.06em;
   color: #292929;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+}
+
+.start-screen-content__btn:hover {
+  background: #FDDCC4;
 }
 
 .start-screen-content__content-heading {
@@ -267,6 +274,12 @@
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+}
+
+.pets__btn-left:hover {
+  background: url(../../assets/icons/Arrow-left.png) no-repeat center #FDDCC4;
 }
 
 .pets__slider-card-wrapper {
@@ -346,6 +359,12 @@
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+}
+
+.pets__btn-right:hover {
+  background: url(../../assets/icons/Arrow-right.png) no-repeat center #FDDCC4;
 }
 
 .pets-btn {
