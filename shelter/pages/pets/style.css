@@ -50,6 +50,11 @@
           align-items: center;
 }
 
+.heder__logo a {
+  display: block;
+  text-decoration: none;
+}
+
 .header__title {
   font-family: 'Georgia';
   font-style: normal;
@@ -103,13 +108,15 @@
   padding: 0;
 }
 
-.header__link {
-  font-family: 'Arial';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 160%;
-  color: #545454;
+.header__list .active {
+  color: #292929;
+}
+
+.header__list .active:after {
+  content: '';
+  display: block;
+  height: 3px;
+  background: #F1CDB3;
 }
 
 .header__link a {
@@ -122,15 +129,8 @@
   color: #545454;
 }
 
-.active {
+.header__link a:hover {
   color: #292929;
-}
-
-.active:after {
-  content: '';
-  display: block;
-  height: 3px;
-  background: #F1CDB3;
 }
 
 .pets {
@@ -185,6 +185,20 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: #FAFAFA;
+  border-radius: 9px;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+}
+
+.pets__card:hover {
+  cursor: pointer;
+  background: #FFFFFF;
+}
+
+.pets__card:hover .pets__btn {
+  background: #FDDCC4;
+  border: transparent;
 }
 
 .pets__name {
@@ -230,6 +244,8 @@
   line-height: 130%;
   letter-spacing: 0.06em;
   color: #292929;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
 }
 
 .pets__navigation {
@@ -255,6 +271,24 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 100px;
+}
+
+.pets-btn:not(.disabled):hover {
+  background: #FDDCC4;
+  border: transparent;
+}
+
+.first {
+  background: #F1CDB3;
+  border: transparent;
+}
+
+.next {
+  border: 2px solid #F1CDB3;
+}
+
+.nextnext {
+  border: 2px solid #F1CDB3;
 }
 
 .footer {
@@ -406,6 +440,12 @@
   text-decoration: none;
 }
 
+.locations__boston-icon {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
 .locations__boston-text {
   font-family: 'Georgia';
   font-style: normal;
@@ -414,6 +454,9 @@
   line-height: 115%;
   letter-spacing: 0.06em;
   color: #F1CDB3;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 
 .locations__london {
@@ -433,6 +476,12 @@
   text-decoration: none;
 }
 
+.locations__london-icon {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
 .locations__london-text {
   font-family: 'Georgia';
   font-style: normal;
@@ -441,6 +490,9 @@
   line-height: 115%;
   letter-spacing: 0.06em;
   color: #F1CDB3;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 
 .footer-puppy {

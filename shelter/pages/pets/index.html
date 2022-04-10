@@ -18,15 +18,17 @@
         <div class="header__container">
             <div class="header__content">
                 <div class="heder__logo">
+                    <a href="../main/index.html">
                     <h1 class="header__title">Cozy House</h1>
-                    <h2 class="header__subtitle">Shelter for pets in Boston</h2>
+                    </a>
+                    <a href="../main/index.html"><h2 class="header__subtitle">Shelter for pets in Boston</h2></a>
                 </div>
                 <nav class="header__menu">
                     <ul class="header__list">
                         <li class="header__link"><a href="../main/index.html">About the shelter</a></li>
                         <li class="header__link active"><a href="">Our pets</a></li>
-                        <li class="header__link"><a href="">Help the shelter</a></li>
-                        <li class="header__link"><a href="">Contacts</a></li>
+                        <li class="header__link"><a href="../main/index.html#my-help">Help the shelter</a></li>
+                        <li class="header__link"><a href="#my-footer">Contacts</a></li>
                     </ul>
                 </nav>
             </div>
@@ -97,24 +99,24 @@
                     </div>
             </div>
             <div class="pets__navigation">
-                <button class="pets-btn"><img src="../../assets/icons/prevprev.png" alt="prevprev"></button>
-                <button class="pets-btn"><img src="../../assets/icons/prev.png" alt="prev"></button>
-                <button class="pets-btn"><img src="../../assets/icons/1.png" alt="first"></button>
-                <button class="pets-btn"><img src="../../assets/icons/next.png" alt="next"></button>
-                <button class="pets-btn"><img src="../../assets/icons/nextnext.png" alt="nextnext"></button>
+                <button class="pets-btn prevprev disabled" ><img src="../../assets/icons/prevprev.png" alt="prevprev"></button>
+                <button class="pets-btn prev disabled"><img src="../../assets/icons/prev.png" alt="prev"></button>
+                <button class="pets-btn first disabled"><img src="../../assets/icons/1.png" alt="first"></button>
+                <button class="pets-btn next"><img src="../../assets/icons/next.png" alt="next"></button>
+                <button class="pets-btn nextnext"><img src="../../assets/icons/nextnext.png" alt="nextnext"></button>
             </div>
         </div>
     </section>
-    <footer class="footer">
+    <footer id="my-footer" class="footer">
         <div class="footer__container">
           
           <div class="contacts">
             <div class="contacts__title">For questions and suggestions</div>
-            <a href="" class="contacts__mail">
+            <a href="mailto:ask@htmlbook.ru" class="contacts__mail">
               <div class="contacts__mail-icon"><img src="../../assets/icons/mail.png" alt="mail"></div>
               <p class="contacts__text">email@shelter.com</p>
             </a>
-            <a href="" class="contacts__phone">
+            <a href="tel:+12345" class="contacts__phone">
               <div class="contacts__phone-icon"><img src="../../assets/icons/phone.png" alt="phone"></div>
               <div class="contacts__number"><img src="../../assets/images/phone-number.png" alt="number-phone"></div>
             </a>
@@ -122,11 +124,11 @@
 
           <div class="locations">
             <div class="locations__title">We are waiting for your visit</div>
-            <a href="" class="locations__boston">
+            <a href="https://goo.gl/maps/WExsmANr8yfxoWov5" target="_blank" class="locations__boston">
               <div class="locations__boston-icon"><img src="../../assets/icons/pin.png" alt="boston"></div>
               <p class="locations__boston-text">1 Central Street, Boston<br>(entrance from the store)</p>
             </a>
-            <a href="" class="locations__london">
+            <a href="https://goo.gl/maps/NoEoBDhLKwH5btfz6" target="_blank" class="locations__london">
               <div class="locations__london-icon"><img src="../../assets/icons/pin.png" alt="london"></div>
               <p class="locations__london-text">18 South Park, London </p>
             </a>

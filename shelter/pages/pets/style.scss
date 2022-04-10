@@ -32,6 +32,11 @@ $containerPadding: 30;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+
+    a {
+        display: block;
+        text-decoration: none;
+    }
 }
 .header__title {
     font-family: 'Georgia';
@@ -70,14 +75,18 @@ $containerPadding: 30;
     height: 27px;
     padding: 0;
     
+    .active {
+        color: #292929;
+    
+        &:after {
+            content: '';
+            display: block;
+            height: 3px;
+            background: #F1CDB3;
+          }
+    }
 }
 .header__link {
-    font-family: 'Arial';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 160%;
-    color: #545454;
 
     a {
         text-decoration: none;
@@ -87,17 +96,11 @@ $containerPadding: 30;
         font-size: 15px;
         line-height: 160%;
         color: #545454;
-        }
-}
-.active {
-    color: #292929;
 
-    &:after {
-        content: '';
-        display: block;
-        height: 3px;
-        background: #F1CDB3;
-      }
+        &:hover {
+            color: #292929;
+        }
+        }
 }
 
 .pets {
@@ -137,6 +140,20 @@ $containerPadding: 30;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: #FAFAFA;
+    border-radius: 9px;
+    transition: background 0.3s;
+
+    &:hover {
+        cursor: pointer;
+        background: #FFFFFF;
+
+        .pets__btn {
+            background: #FDDCC4;
+            border: transparent;
+        }
+
+    }
 }
 .pets__image {
 }
@@ -170,6 +187,7 @@ $containerPadding: 30;
     line-height: 130%;
     letter-spacing: 0.06em;
     color: #292929;
+    transition: background 0.3s;
 }
 .pets__navigation {
     width: 340px;
@@ -186,8 +204,22 @@ $containerPadding: 30;
     border: 2px solid #CDCDCD;
     box-sizing: border-box;
     border-radius: 100px;
-}
 
+    &:not(.disabled):hover {
+        background: #FDDCC4;
+        border: transparent;
+    }
+}
+.first {
+    background: #F1CDB3;
+    border: transparent;
+}
+.next {
+    border: 2px solid #F1CDB3;
+}
+.nextnext {
+    border: 2px solid #F1CDB3;
+}
 
 .footer {
     width: $maxWidth + px;
@@ -279,6 +311,7 @@ $containerPadding: 30;
     text-decoration: none;
 }
 .locations__boston-icon {
+    flex: 1 1 auto;
 }
 .locations__boston-text {
     font-family: 'Georgia';
@@ -288,6 +321,7 @@ $containerPadding: 30;
     line-height: 115%;
     letter-spacing: 0.06em;
     color: #F1CDB3;
+    flex: 1 1 auto;
 }
 .locations__london {
     width: 302px;
@@ -298,6 +332,7 @@ $containerPadding: 30;
     text-decoration: none;
 }
 .locations__london-icon {
+    flex: 1 1 auto;
 }
 .locations__london-text {
     font-family: 'Georgia';
@@ -307,6 +342,7 @@ $containerPadding: 30;
     line-height: 115%;
     letter-spacing: 0.06em;
     color: #F1CDB3;
+    flex: 1 1 auto;
 }
 .footer-puppy {
     flex: 0  0 300px;

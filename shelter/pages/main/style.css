@@ -1,12 +1,12 @@
 .start-screen {
   width: 1280px;
   margin: 0 auto;
-  height: 908px;
+  min-height: 75.67%;
   background: url(../../assets/images/setka.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
 }
 
 .header {
-  width: 1280px;
+  width: 1200px;
   margin: 0 auto;
 }
 
@@ -67,9 +67,14 @@
   color: #CDCDCD;
 }
 
+.menu__link:hover {
+  color: #FAFAFA;
+}
+
 .menu__link.active {
   text-decoration: none;
   padding: 0;
+  color: #FAFAFA;
 }
 
 .menu__link.active:after {
@@ -79,7 +84,7 @@
   background: #F1CDB3;
 }
 
-.start-screen-conteht__container {
+.start-screen-content__container {
   width: 1200px;
   margin: 0 auto;
   display: -webkit-box;
@@ -139,7 +144,7 @@
 }
 
 .start-screen-content__image {
-  width: 698px;
+  width: 60.67%;
   height: 728px;
 }
 
@@ -280,6 +285,7 @@
 
 .pets__btn-left:hover {
   background: url(../../assets/icons/Arrow-left.png) no-repeat center #FDDCC4;
+  border: transparent;
 }
 
 .pets__slider-card-wrapper {
@@ -308,6 +314,16 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.pets__slider-card:hover {
+  cursor: pointer;
+  background: #FFFFFF;
+}
+
+.pets__slider-card:hover .pets__learnmore {
+  background: #FDDCC4;
+  border: transparent;
 }
 
 .pets__image {
@@ -365,6 +381,7 @@
 
 .pets__btn-right:hover {
   background: url(../../assets/icons/Arrow-right.png) no-repeat center #FDDCC4;
+  border: transparent;
 }
 
 .pets-btn {
@@ -382,7 +399,10 @@
   width: 261px;
   height: 52px;
   background: #F1CDB3;
+  border: transparent;
   border-radius: 100px;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
 }
 
 .pets-btn a {
@@ -394,6 +414,10 @@
   letter-spacing: 0.06em;
   color: #292929;
   text-decoration: none;
+}
+
+.pets-btn:hover {
+  background: #FDDCC4;
 }
 
 .help {
@@ -544,6 +568,12 @@
   padding: 10px 15px;
   background: #F1CDB3;
   border-radius: 9px;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+}
+
+.donation__credit-card:hover {
+  background: #FDDCC4;
 }
 
 .donation__info {
@@ -690,6 +720,12 @@
   text-decoration: none;
 }
 
+.locations__boston-icon {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
 .locations__boston-text {
   font-family: 'Georgia';
   font-style: normal;
@@ -698,6 +734,9 @@
   line-height: 115%;
   letter-spacing: 0.06em;
   color: #F1CDB3;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 
 .locations__london {
@@ -715,6 +754,12 @@
   text-decoration: none;
 }
 
+.locations__london-icon {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
 .locations__london-text {
   font-family: 'Georgia';
   font-style: normal;
@@ -723,6 +768,9 @@
   line-height: 115%;
   letter-spacing: 0.06em;
   color: #F1CDB3;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 
 .footer-puppy {
