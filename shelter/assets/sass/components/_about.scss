@@ -1,0 +1,56 @@
+.about {
+}
+
+.about__content {
+    display: flex;
+    padding: 80px 0 100px;
+    align-items: center;
+    @include media-laptop {
+        flex-direction: column-reverse;
+    }
+}
+
+.about__image {
+    padding: 0 120px 0 175px;
+    @include media-laptop {
+        padding: 80px 0 0 0;
+    }
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 175px 0 0;
+    @include media-laptop {
+        width: 430px;
+        height: 380px;
+        padding: 0;
+    }
+}
+.content__heading {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    align-items: center;
+    letter-spacing: 0.06em;
+    color: #545454;
+}
+.content__subheading-first {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: #4C4C4C;
+    padding: 25px 0;
+}
+.content__subheading-two {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    align-items: center;
+    color: #4C4C4C;
+}

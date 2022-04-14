@@ -1,0 +1,35 @@
+.menu {
+    width: 443px;
+    height: 27px;
+}
+.menu__list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu__link {
+    padding: 0 0 0 35px;
+    @include arial-nor-400();
+    font-size: 15px;
+    line-height: 160%;
+    text-decoration: none;
+    color: #CDCDCD;
+    
+    &:hover {
+        color: #FAFAFA;
+    }
+
+    &.active {
+        text-decoration: none;
+        padding: 0;
+        color: #FAFAFA;
+
+        &:after {
+            content: '';
+            display: block;
+            height: 3px;
+            background: #F1CDB3;;
+          }
+    }
+}

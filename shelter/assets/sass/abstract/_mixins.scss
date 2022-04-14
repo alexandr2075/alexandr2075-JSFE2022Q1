@@ -1,0 +1,28 @@
+@mixin geo-nor-400($style: normal, $weight: 400) {
+    font-family: 'Georgia';
+    font-style: $style;
+    font-weight: $weight;
+}
+@mixin arial-nor-400($style: normal, $weight: 400) {
+    font-family: 'Arial';
+    font-style: $style;
+    font-weight: $weight;
+}
+
+@mixin widthAndMargin() {
+    min-width: $maxWidth + px;
+}
+@mixin widthContainerAndMargin() {
+    min-width: $maxWidthContainer + px;
+    margin: 0 auto;
+}
+
+@mixin media-laptop {
+    @media (max-width: 1279px) {@content}
+};
+@mixin media-tablet {
+    @media (max-width: 767px) {@content}
+};
+@mixin media-mobile {
+    @media (max-width: 319px) {@content}
+}
