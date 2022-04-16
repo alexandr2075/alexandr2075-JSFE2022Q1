@@ -1,0 +1,10 @@
+.wrapper {
+    width: 1200px;
+    margin: auto;
+    @include media-laptop {
+        width: 708px;
+    }
+    @include media-tablet {
+        width: 300px;
+    }
+}

@@ -1,0 +1,108 @@
+.pets {
+    background: #F6F6F6;
+}
+
+.pets__content {
+    padding: 80px 0 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    @include media-tablet {
+        padding: 31px 0 42px 0;
+    }
+}
+.pets__heading {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #545454;
+    @include media-tablet {
+        font-size: 25px;
+    }
+}
+.pets__slider {
+    margin: 60px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    @include media-tablet {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 42px 0;
+        row-gap: 20px;
+    }
+}
+.btn-left {
+    width: 52px;
+    height: 52px;
+    border: 2px solid #F1CDB3;
+    box-sizing: border-box;
+    border-radius: 100px;
+    background: url(../../assets/icons/Arrow-left.png) no-repeat center;
+    align-self: center;
+    transition: background 0.3s;
+    @include media-tablet {
+        order: 2;
+    }
+
+    &:hover {
+        background: url(../../assets/icons/Arrow-left.png) no-repeat center #FDDCC4;
+        border: transparent;
+    }
+
+}   
+.card-wrapper{
+    width: 990px;
+    display: flex;
+    justify-content: space-between;
+    @include media-laptop {
+        width: 580px;
+    }
+    @include media-tablet {
+        width: 100%;
+        justify-content: space-around;
+    }
+}
+
+
+.btn-right {
+    width: 52px;
+    height: 52px;
+    border: 2px solid #F1CDB3;
+    box-sizing: border-box;
+    border-radius: 100px;
+    background: url(../../assets/icons/Arrow-right.png) no-repeat center;
+    align-self: center;
+    transition: background 0.3s;
+    @include media-tablet {
+        order: 3;
+    }
+
+    &:hover {
+        background: url(../../assets/icons/Arrow-right.png) no-repeat center #FDDCC4;
+        border: transparent;
+    }
+}
+.pets-get {
+    display: inline-block;
+    padding: 15px 45px;
+    background: #F1CDB3;
+    border: transparent;
+    border-radius: 100px;
+    transition: background 0.3s;
+    @include geo-nor-400();
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #292929;
+    text-decoration: none;
+
+    &:hover {
+        background: #FDDCC4;
+    }
+}
