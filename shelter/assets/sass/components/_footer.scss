@@ -11,6 +11,7 @@
         justify-content: space-around;
         flex-wrap: wrap;
         row-gap: 65px;
+        padding: 30px 0 0 0;
     }
     @include media-tablet {
         flex-direction: column;
