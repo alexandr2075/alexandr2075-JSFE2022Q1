@@ -1,108 +1,60 @@
-$fontFamily: "Georgia";
-$fontSize: rem(15);
+@import "../../assets/sass/abstract/constants";
+@import "../../assets/sass/abstract/mixins";
+@import "../../assets/sass/layout/wrapper";
+@import "../../assets/sass/components/header";
+@import "../../assets/sass/components/navigation";
+@import "../../assets/sass/components/not-only";
+@import "../../assets/sass/components/about";
+@import "../../assets/sass/components/pets";
+@import "../../assets/sass/components/help";
+@import "../../assets/sass/components/donation";
+@import "../../assets/sass/components/footer";
+@import "../../assets/sass/base/logo";
+@import "../../assets/sass/base/buttons";
+@import "../../assets/sass/base/burger";
+
+
 $minWidth: 320;
 $maxWidth: 1280;
 $maxWidthContainer: 1200;
-$containerPadding: 30;
 
-.header {
-    width: $maxWidth + px;
-    margin: 0 auto;
+ 
+.sticky {
     position: sticky;
     top: 0;
+}
+.header {
     background: #fff;
+    padding: 30px 0;
 }
-.header__container {
-    width: $maxWidthContainer + px;
-    height: 120px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-}
-.header__content {
-    width: $maxWidthContainer + px;
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.heder__logo {
-    height: 60px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
 
-    a {
-        display: block;
-        text-decoration: none;
+.logo__title {
+    color: $color-dark-l;
+}
+.logo__subtitle {
+    color: $color-dark-3xl;
+}
+
+.menu__link {
+    text-decoration: none;
+    color: $color-dark-l;
+    
+    &:hover {
+        color: $color-dark-3xl;
     }
-}
-.header__title {
-    font-family: 'Georgia';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 110%;
-    letter-spacing: 0.06em;
-    color: #545454;
-    margin: 0 0 auto 0;
-}
-.header__subtitle {
-    font-family: 'Arial';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 15px;
-    letter-spacing: 0.1em;
-    color: #292929;
-    margin: 0 0 0 0;
-}
-.header__menu {
-    width: 443px;
-    height: 27px;
-    display: flex;
-    padding: 0;
-    justify-content: space-between;
-    align-items: center;
-}
-.header__list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    width: 443px;
-    height: 27px;
-    padding: 0;
-    
-    .active {
-        color: #292929;
-    
+
+    &.active {
+        text-decoration: none;
+        color: $color-dark-l;
+
         &:after {
             content: '';
             display: block;
             height: 3px;
-            background: #F1CDB3;
+            background: #F1CDB3;;
           }
     }
 }
-.header__link {
-
-    a {
-        text-decoration: none;
-        font-family: 'Arial';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 160%;
-        color: #545454;
-
-        &:hover {
-            color: #292929;
-        }
-        }
-}
-
 .pets {
     width: $maxWidth + px;
     margin: 0 auto;

@@ -30,6 +30,13 @@
     @include media-laptop {
         margin: 0 0 100px;
     }
+    @include media-tablet {
+        max-width: 100%;
+        align-items: center;
+        text-align: center;
+        justify-content: start;
+        height: auto;
+    }
 }
 
 .not-only__heading {
@@ -38,6 +45,9 @@
     line-height: 130%;
     color: #FFFFFF;
     margin: 0 0 42px 0;
+    @include media-tablet {
+        font-size: 25px;
+    }
 }
 .not-only__subheading {
     @include arial-nor-400();
@@ -46,6 +56,9 @@
     color: #CDCDCD;
     width: 460px;
     margin: 0 0 42px 0;
+    @include media-tablet {
+        max-width: 100%;
+    }
 }
 .not-only__btn {
     @include media-laptop {
