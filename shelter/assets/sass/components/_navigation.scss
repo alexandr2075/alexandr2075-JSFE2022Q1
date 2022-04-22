@@ -3,7 +3,17 @@
     height: 27px;
     @include media-tablet {
         display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 320px;
+        height: 100%;
+        background: $color-dark-3xl;
     }
+}
+.menu._active {
+    display: block;
+    
 }
 .menu__list {
     display: flex;

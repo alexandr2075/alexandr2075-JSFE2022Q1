@@ -122,7 +122,17 @@
 @media (max-width: 767px) {
   .menu {
     display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 320px;
+    height: 100%;
+    background: #292929;
   }
+}
+
+.menu._active {
+  display: block;
 }
 
 .menu__list {
@@ -503,6 +513,37 @@
   border: transparent;
 }
 
+.carousel-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 990px;
+  height: 435px;
+  overflow: hidden;
+}
+
+.carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  left: -990px;
+}
+
+.transition-right {
+  -webkit-animation-name: move-right;
+          animation-name: move-right;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.transition-left {
+  -webkit-animation-name: move-left;
+          animation-name: move-left;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
 .card-wrapper {
   width: 990px;
   display: -webkit-box;
@@ -524,6 +565,42 @@
     width: 100%;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+}
+
+@-webkit-keyframes move-right {
+  from {
+    left: -990px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+@keyframes move-right {
+  from {
+    left: -990px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+@-webkit-keyframes move-left {
+  from {
+    left: -990px;
+  }
+  to {
+    left: -1980px;
+  }
+}
+
+@keyframes move-left {
+  from {
+    left: -990px;
+  }
+  to {
+    left: -1980px;
   }
 }
 
@@ -1162,6 +1239,8 @@
   position: relative;
   width: 30px;
   height: 22px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 @media (max-width: 767px) {
@@ -1179,6 +1258,12 @@
 .burger:after {
   bottom: 0;
   left: 0;
+}
+
+.burger._active {
+  margin-top: 19px;
+  -webkit-transform: rotate(90deg) translate(-10px, 0px);
+          transform: rotate(90deg) translate(-10px, 0px);
 }
 
 .burger__line {
