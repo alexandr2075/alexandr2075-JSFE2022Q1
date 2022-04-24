@@ -17,7 +17,6 @@
     <div class="start-screen">
       <div class="header-container">
         <header class="header wrapper">
-
           <div class="logo">
             <a href="#" class="logo__link">
               <h1 class="logo__title">Cozy House</h1>
@@ -44,7 +43,6 @@
             </ul>
           </nav>
         </header>
-        
       </div>
       <div class="start-screen-content wrapper">
         <div class="not-only">
@@ -127,15 +125,20 @@
               <div class="carousel-wrapper">
                 <div id="carousel" class="carousel">
                   <div id="card-left" class="card-wrapper">
+
                     <div class="card">
                       <div class="card__image">
-                        <img src="../../assets/images/pets-katrine.png" alt="pet" />
+                        <img
+                          src="../../assets/images/pets-katrine.png"
+                          alt="pet"
+                        />
                       </div>
                       <div class="card__name">Katrine</div>
                       <button class="card__learnmore button-learnmore">
                         Learn more
                       </button>
                     </div>
+
                     <div class="card">
                       <div class="card__image">
                         <img
@@ -150,7 +153,10 @@
                     </div>
                     <div class="card">
                       <div class="card__image">
-                        <img src="../../assets/images/pets-woody.png" alt="pet" />
+                        <img
+                          src="../../assets/images/pets-woody.png"
+                          alt="pet"
+                        />
                       </div>
                       <div class="card__name">Woody</div>
                       <button class="card__learnmore button-learnmore">
@@ -161,7 +167,10 @@
                   <div id="card-center" class="card-wrapper">
                     <div class="card">
                       <div class="card__image">
-                        <img src="../../assets/images/pets-katrine.png" alt="pet" />
+                        <img
+                          src="../../assets/images/pets-katrine.png"
+                          alt="pet"
+                        />
                       </div>
                       <div class="card__name">Katrine</div>
                       <button class="card__learnmore button-learnmore">
@@ -182,7 +191,10 @@
                     </div>
                     <div class="card">
                       <div class="card__image">
-                        <img src="../../assets/images/pets-woody.png" alt="pet" />
+                        <img
+                          src="../../assets/images/pets-woody.png"
+                          alt="pet"
+                        />
                       </div>
                       <div class="card__name">Woody</div>
                       <button class="card__learnmore button-learnmore">
@@ -193,7 +205,10 @@
                   <div id="card-right" class="card-wrapper">
                     <div class="card">
                       <div class="card__image">
-                        <img src="../../assets/images/pets-katrine.png" alt="pet" />
+                        <img
+                          src="../../assets/images/pets-katrine.png"
+                          alt="pet"
+                        />
                       </div>
                       <div class="card__name">Katrine</div>
                       <button class="card__learnmore button-learnmore">
@@ -214,7 +229,10 @@
                     </div>
                     <div class="card">
                       <div class="card__image">
-                        <img src="../../assets/images/pets-woody.png" alt="pet" />
+                        <img
+                          src="../../assets/images/pets-woody.png"
+                          alt="pet"
+                        />
                       </div>
                       <div class="card__name">Woody</div>
                       <button class="card__learnmore button-learnmore">
@@ -224,13 +242,52 @@
                   </div>
                 </div>
               </div>
-              
+
               <button id="btn-right" class="btn-right"></button>
             </div>
             <a class="pets-get" href="../pets/index.html"
               >Get to know the rest</a
             >
           </div>
+        </div>
+
+        <!--Modal window-->
+
+        <div class="modal-window-shadow">
+          <div class="modal-window-wrapper">
+            <span class="modal-close">&#10006;</span>
+            <div class="modal-window">
+              <div class="modal-window-image">
+                <img class="modal-window-image__img" src="../../assets/images/pets-jennifer.png" alt="dog" />
+              </div>
+              <div class="modal-window-content">
+                <h3 class="modal-window-content__title">Jennifer</h3>
+                <h4 class="modal-window-content__subtitle">Dog - Labrador</h4>
+                <p class="modal-window-content__text">
+                  Jennifer is a sweet 2 months old Labrador that is patiently
+                  waiting to find a new forever home. This girl really enjoys
+                  being able to go outside to run and play, but won't hesitate to
+                  play up a storm in the house if she has all of her favorite
+                  toys.
+                </p>
+                <ul class="modal-window-content__list">
+                  <li class="modal-window-content__list-item">
+                    <b>Age:</b><span>2 months</span>
+                  </li>
+                  <li class="modal-window-content__list-item">
+                    <b>Inoculations:</b><span>none</span>
+                  </li>
+                  <li class="modal-window-content__list-item">
+                    <b>Diseases:</b><span>none</span>
+                  </li>
+                  <li class="modal-window-content__list-item">
+                    <b>Parasites:</b><span>none</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
         </div>
       </section>
 
@@ -414,6 +471,7 @@
         </div>
       </footer>
     </main>
-    <script src="./script.js"></script>
+    <script type="module" src="./script.js"></script>
+    <!-- <script type="module" src="./modal.js"></script> -->
   </body>
 </html>
