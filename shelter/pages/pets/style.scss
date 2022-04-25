@@ -2,6 +2,7 @@
 @import "../../assets/sass/abstract/mixins";
 @import "../../assets/sass/layout/wrapper";
 @import "../../assets/sass/layout/card";
+@import "../../assets/sass/layout/modal-window";
 @import "../../assets/sass/components/header";
 @import "../../assets/sass/components/navigation";
 @import "../../assets/sass/components/not-only";
@@ -13,6 +14,8 @@
 @import "../../assets/sass/base/logo";
 @import "../../assets/sass/base/buttons";
 @import "../../assets/sass/base/burger";
+@import "../../assets/sass/base/normalize";
+@import "../../assets/sass/base/base";
 
 
 $minWidth: 320;
@@ -24,11 +27,57 @@ $maxWidthContainer: 1200;
     height: 120px;
     position: sticky;
     top: 0;
-    background: #fff;
+    background: $color-light-xl;
 }
 .header {
     padding: 30px 0;
 }
+.header._active {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 320px;
+    height: 100vh;
+    background: $color-light-xl;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 30px 10px;
+    animation: left 0.5s;
+    .logo__title {
+        color: $color-dark-l;
+    }
+    .logo__subtitle {
+        color: $color-dark-3xl;
+    }
+    
+    .menu__link {
+        text-decoration: none;
+        color: $color-dark-l;
+        
+        &:hover {
+            color: $color-dark-3xl;
+        }
+    
+        &.active {
+            text-decoration: none;
+            color: $color-dark-l;
+    
+            &:after {
+                content: '';
+                display: block;
+                height: 3px;
+                background: #F1CDB3;;
+              }
+        }
+    }
+ }
+ 
+ @keyframes left {
+     from {left: 100vw}
+     to {left: calc(100vw - 320px)}
+ }
 
 .logo__title {
     color: $color-dark-l;

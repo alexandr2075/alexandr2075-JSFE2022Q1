@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Private repository for @alexandr2075",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "style-main": "sass --watch shelter/pages/main/style.scss shelter/pages/main/style.css",
     "style-pets": "sass --watch shelter/pages/pets/style.scss shelter/pages/pets/style.css",

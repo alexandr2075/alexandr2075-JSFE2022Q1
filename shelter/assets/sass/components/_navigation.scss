@@ -3,7 +3,51 @@
     height: 27px;
     @include media-tablet {
         display: none;
+        
     }
+}
+.menu._active {
+    @include media-tablet {
+        display: flex;
+        width: 243px;
+        height: 327px;
+        margin: auto;
+        .menu__list {
+            width: 243px;
+            height: 327px;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            li {
+                padding: 0;
+            }
+        }
+        .menu__link {
+            @include arial-nor-400();
+            font-size: 32px;
+            line-height: 160%;
+            text-decoration: none;
+            color: #CDCDCD;
+
+            
+            &:hover {
+                color: #FAFAFA;
+            }
+        
+            &.active {
+                text-decoration: none;
+                color: #FAFAFA;
+        
+                &:after {
+                    content: '';
+                    display: block;
+                    height: 3px;
+                    background: #F1CDB3;;
+                  }
+            }
+        }
+    }
+    
 }
 .menu__list {
     display: flex;

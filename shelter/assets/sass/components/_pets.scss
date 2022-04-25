@@ -56,6 +56,39 @@
     }
 
 }   
+
+.carousel-wrapper {
+    display: flex;
+    width: 990px;
+    height: 435px;
+    overflow: hidden;
+    @include media-laptop {
+        width: 580px;
+    }
+    @include media-tablet {
+        width: 270px;
+        justify-content: space-around;
+    }
+}
+.carousel {
+    display: flex;
+    position: relative;
+    left: -990px;
+    @include media-laptop {
+        left: -580px;
+    }
+    @include media-tablet {
+        left: -270px;
+    }
+}
+.transition-right {
+    animation-name: move-right;
+    animation-duration: 2s;
+}
+.transition-left {
+    animation-name: move-left;
+    animation-duration: 2s;
+}
 .card-wrapper{
     width: 990px;
     display: flex;
@@ -68,8 +101,15 @@
         justify-content: space-around;
     }
 }
-
-
+@keyframes move-right {
+    from {left: -990px;}
+    to {left: 0px;}
+    
+}
+@keyframes move-left {
+    from {left: -990px;}
+    to {left: -1980px;}
+}
 .btn-right {
     width: 52px;
     height: 52px;
