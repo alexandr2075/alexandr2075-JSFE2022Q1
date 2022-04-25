@@ -4,12 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="normalize.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link
       rel="stylesheet"
       type="text/css"
-      href="../assets/fonts/stylesheet.css"
+      href="../../assets/fonts/stylesheet.css"
     />
     <title>Our pets</title>
   </head>
@@ -40,9 +39,15 @@
               >
             </li>
             <li>
-              <a href="../main/index.html#help" class="menu__link">Help the shelter</a>
+              <a href="../main/index.html#help" class="menu__link"
+                >Help the shelter</a
+              >
             </li>
-            <li><a href="../pets/index.html#my-footer" class="menu__link">Contacts</a></li>
+            <li>
+              <a href="../pets/index.html#my-footer" class="menu__link"
+                >Contacts</a
+              >
+            </li>
           </ul>
         </nav>
       </div>
@@ -112,6 +117,7 @@
             <button class="card__learnmore button-learnmore">Learn more</button>
           </div>
         </div>
+        
         <div class="pets__navigation">
           <button class="pets-btn prevprev disabled">
             <img src="../../assets/icons/prevprev.png" alt="prevprev" />
@@ -130,6 +136,46 @@
           </button>
         </div>
       </div>
+
+         <!--Modal window-->
+
+         <div class="modal-window-shadow">
+          <div class="modal-window-wrapper">
+            <span class="modal-close">&#10006;</span>
+            <div class="modal-window">
+              <div class="modal-window-image">
+                <img class="modal-window-image__img" src="../../assets/images/pets-jennifer.png" alt="dog" />
+              </div>
+              <div class="modal-window-content">
+                <h3 class="modal-window-content__title">Jennifer</h3>
+                <h4 class="modal-window-content__subtitle">Dog - Labrador</h4>
+                <p class="modal-window-content__text">
+                  Jennifer is a sweet 2 months old Labrador that is patiently
+                  waiting to find a new forever home. This girl really enjoys
+                  being able to go outside to run and play, but won't hesitate to
+                  play up a storm in the house if she has all of her favorite
+                  toys.
+                </p>
+                <ul class="modal-window-content__list">
+                  <li class="modal-window-content__list-item">
+                    <b>Age:</b><span>2 months</span>
+                  </li>
+                  <li class="modal-window-content__list-item">
+                    <b>Inoculations:</b><span>none</span>
+                  </li>
+                  <li class="modal-window-content__list-item">
+                    <b>Diseases:</b><span>none</span>
+                  </li>
+                  <li class="modal-window-content__list-item">
+                    <b>Parasites:</b><span>none</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+
+
     </section>
     <footer id="my-footer" class="footer">
       <div class="footer__container wrapper">
@@ -183,5 +229,6 @@
         </picture>
       </div>
     </footer>
+    <script type="module" src="./script.js"></script>
   </body>
 </html>

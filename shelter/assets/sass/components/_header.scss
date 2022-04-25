@@ -9,5 +9,24 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+}
+.header._active {
+   position: fixed;
+   top: 0;
+   right: 0;
+   width: 320px;
+   height: 100vh;
+   background: $color-dark-3xl;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-start;
+   justify-content: space-between;
+   padding: 30px 10px;
+   animation: left 0.5s;
 }
 
+@keyframes left {
+    from {left: 100vw}
+    to {left: calc(100vw - 320px)}
+}
