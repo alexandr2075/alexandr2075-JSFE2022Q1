@@ -4,3 +4,6 @@ body {
 .carImg {
     display: block;
 }
+.empty {
+    height: 50px;
+}

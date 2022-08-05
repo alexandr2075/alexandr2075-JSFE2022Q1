@@ -1,27 +1,13 @@
 import './style.css';
-import View from './view';
-import Model from './model';
-import Winners from './winners';
+import View from './js-files/view/garage';
+import Router from './js-files/router';
+import navigation from './js-files/layouts/navigation';
 
 (async () => {
-    try {
-        const cars = await Model.vehicleData();
-        View.render(cars);
-        
-        const garage = document.getElementById('toGarage');
-        garage.addEventListener("click", () => {
-            View.render(cars);
-        });
-        const winner = document.getElementById('toWinner');
-        winner.addEventListener("click", () => {
-            Winners.render();
-        });
-        
-    } catch (error) {
-        console.error(error.message);
-
-    }
+  try {
+    navigation();
+    Router.init();
+  } catch (error) {
+    console.error(error.message);
+  }
 })();
-
-
-
