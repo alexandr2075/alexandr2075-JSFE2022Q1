@@ -1,13 +1,14 @@
 import './style.css';
-import View from './js-files/view/garage';
 import Router from './js-files/router';
 import navigation from './js-files/layouts/navigation';
+import { results } from './js-files/view/garage';
 
 (async () => {
   try {
     navigation();
+    results();
     Router.init();
   } catch (error) {
-    console.error(error.message);
+    throw new Error(error.message);
   }
 })();
