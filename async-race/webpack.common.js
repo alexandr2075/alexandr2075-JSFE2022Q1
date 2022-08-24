@@ -7,7 +7,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-  entry: './index.ts',
+  entry: '../async-race/index.ts',
   mode: 'development',
   devtool: 'source-map',
   optimization: {
